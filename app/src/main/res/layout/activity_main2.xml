@@ -4,28 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
-    android:background="@color/red">
-    <TextView
-        android:id="@+id/textview2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="THE NUMBER ENTERD IS EVEN"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp"
+    android:background="@drawable/backk"
+    tools:context=".MainActivity2">
 
-        android:layout_below="@+id/randombtn"/>
-    <Button
-        android:id="@+id/backbtn1"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/some"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_above="@id/previousbtn"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:text="BACK"
-        android:layout_marginTop="100dp"
-        android:layout_below="@+id/textview2"></Button>
+        android:orientation="horizontal" />
 
+    <Button
+        android:id="@+id/previousbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:text="PREVIOUS"
+        />
 
+    <Button
+        android:id="@+id/nextbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent"
+        android:text="NEXT" />
 </RelativeLayout>

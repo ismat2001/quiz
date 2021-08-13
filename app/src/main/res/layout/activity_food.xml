@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".food">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/accent">
+        <TextView
+            android:id="@+id/quesno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1/10"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/ques"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:text="questiom"
+            android:layout_margin="16dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+
+        >
+        <Button
+            android:id="@+id/opt1"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="option 1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#E99C03"
+            android:padding="16dp"
+            android:elevation="3dp"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/opt2"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="option 2"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#E99C03"
+            android:padding="16dp"
+            android:elevation="3dp"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/opt3"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="option 3"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#E99C03"
+            android:padding="16dp"
+            android:elevation="3dp"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/opt4"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="option 4"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#E99C03"
+            android:padding="16dp"
+            android:elevation="3dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/accent"
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="10"
+        android:layout_above="@+id/linear2"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
